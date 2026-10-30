@@ -1,0 +1,44 @@
+.Governance.Quality.Index {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 16px;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--soft), #ffffff);
+    color: var(--ink);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.contact-links span {
+    color: var(--muted);
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .contact-links {
+        grid-template-columns: 1fr;
+    }
+}
